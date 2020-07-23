@@ -1,0 +1,54 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+	background-size: cover;
+    background-image: url(../img/background.jpg);
+    background-repeat: repeat-y;
+}
+header .container {
+    height: 200px;
+   
+   
+}
+
+.logo{
+    align-items: center;
+    text-align: center;
+    opacity: 0.4;
+  
+}
+
+.container {
+	overflow: hidden;
+	height: auto;
+	margin: 0 auto;
+
+
+.left, .right {
+	width: 50%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+}
+
+form {
+	background-color: #f4f4f4;
+	border-radius: 3px;
+	position: relative;
+	width: 85%;
+	margin: 50px auto;
+}
+
+.button{
+    color: white;
+    background-color: rgb(101, 201, 101);
+    font-size: 15px;
+}
+
+
+
