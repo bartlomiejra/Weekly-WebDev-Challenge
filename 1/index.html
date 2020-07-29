@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>01 </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 
 </head>
 <body>
@@ -17,7 +18,10 @@
        <div class="form">
            <h2>Register form</h2>
         <form id="registerform">
-            <label> <input type="text" placeholder="Username"></label><br>
+            <div class="register-form__username">
+             <input type="text" placeholder="Username">
+            <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+            </div><br>
             <label><input type="password" placeholder="Password"></label><br>
             <label><input type="password" placeholder="Confirm Password"></label><br>
             <label><input type="email" placeholder="Email"></label><br>

@@ -1,9 +1,10 @@
 body {
     font-family: 'Titillium Web', sans-serif;
-	background-size: cover;
+    background-size: cover;
     background-image: url(../img/background.jpg);
     background-repeat: repeat-y;
 }
+
 header .container {
     height: 200px;
    
@@ -36,7 +37,8 @@ header .container {
 }
 }
 
-form {
+
+.form {
 	background-color: #f4f4f4;
 	border-radius: 3px;
 	position: relative;
