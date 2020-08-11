@@ -1,108 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01 </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-   <div class="container">
-       <header>
-           <div class="logo"><img src="img/logo.png"></div>
-       </header>
-       <div class="left">
-       <div class="form">
-           <h2>Register form</h2>
-        <form id="registerform">
-            <div class="register-form__username">
-             <input type="text" placeholder="Username">
-            <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-            </div><br>
-            <label><input type="password" placeholder="Password"></label><br>
-            <label><input type="password" placeholder="Confirm Password"></label><br>
-            <label><input type="email" placeholder="Email"></label><br>
-            <label>
+	<header>
+		<div class="container">
+			<div class="logobig"><img src="img/logo.png"></div>
+		</div>
+	</header>
+	<div class="container">
+		<div id="left">
+			<h2>Register form</h2>
+			<div class="form">
+				<form id="register">
+					<div class="form-container">
+						<div class="optinp"><label><i class="fa fa-user"></i><input type="text" class="form-control"
+									placeholder="Username" required></label></div><br>
+						<div class="optinp"><label><i class="fa fa-lock"></i><input type="password" class="form-control"
+									placeholder="Password" required></label></div><br>
+						<div class="optinp"><label><i class="fa fa-lock"></i><input type="password" class="form-control"
+									placeholder="Confirm password" required></label></div><br>
+						<div class="optinp"><label><i class="fa fa-envelope mail"></i><input type="email"
+									class="form-control" placeholder="Email" required></label></div><br>
+						<div class="optinp"><label><i class="fa fa-map-marker"></i>
+								<select name="location" form="register" class="form-control">
+									<option value="poland">Poland</option>
+									<option value="germany">Germany</option>
+									<option value="russia">Russia</option>
+									<option value="other">Other</option>
+								</select>
+							</label></div><br>
+						<div class="optinps">
+							<input type="checkbox" name="checkbox-input" id="checkbox-input" class="checkbox" value=""
+								checked>
+							<label for="checkbox-input">
+								<div class="checkbox-div">
+									<div class="checkbox-inner">
+									</div>
+								</div>
+								I have read and accept conditions of use
+							</label>
 
-            <select name="location">
-
-                <option value="yourLocation">Your Location</option>
-                <option value="Warszawa">Warszawa</option>
-                <option value="Poznań">Poznań</option>
-                <option value="Kraków">Kraków</option>
-                <option value="Rzeszów">Rzeszów</option>
-            </select>
-        </label><br>
-        <div class="opt">
-            <input type="checkbox">
-            <div class="checkbox">
-                I have read and accept conditions of use
-            </div>
-        </div>
-        <button type="button" class="button">Sign Up</button>
-        </form>
-</div>
-<h2>Send Email</h2>  
-<form id="sendEmail">
-<label><input type="text" placeholder="Your Name"></label><br>
-<label><input type="email" placeholder=" Your Email"></label><br>
-<textarea style="resize:none;" rows="10" placeholder="Type your message..."></textarea><br>
-<div class="opt">
-    <input type="checkbox">
-    <div class="checkbox">
-        Send a copy to my Email
-    </div>
-</div>
-<button type="button" class="button">Send Email</button>
-
-</form>
-   </div>
+						</div><br>
+						<button type="button" class="success-big">Sign up</button>
+					</div>
+				</form>
+			</div>
+			<h2>Send email</h2>
+			<div class="form">
+				<form>
+					<div class="optinp"><label><i class="fa fa-user"></i><input type="text" class="form-control"
+								placeholder="Your name" required></label></div><br>
+					<div class="optinp"><label><i class="fa fa-envelope    mail"></i><input type="email"
+								class="form-control" placeholder="Your Email" required></label></div><br>
+					<div class="optinp">
+						<textarea rows="10" style="resize:none;" required>Type your message...</textarea>
+					</div><br>
+					<div class="optinps">
+						<input type="checkbox" name="checkbox-email" id="checkbox-email" class="checkbox" value="">
+						<label for="checkbox-email">
+							<div class="checkbox-div">
+								<div class="checkbox-inner">
+								</div>
+							</div>
+							Send a copy to my Email
+						</label>
 
 
-
-
-   <div class="right">
-    <div class="form">
-        
-        <h2>Sign In Form</h2>
-        <form id="signInForm">
-            <div class="optinp"><label><i class="fa fa-user"></i><input type="text" placeholder="Username"></label></div><br>
-<label><input type="password" placeholder="Password"></label><br>
-<div class="opt">
-    <input type="checkbox">
-    <div class="checkbox">
-        Remember me
-    </div>
-</div>
-<button type="button" class="button">Sign in</button>
-    </form>
-</div>
-<div class="form">
-    <h2>Recover From</h2>
-    <form id="recoverFrom">
-        <label><input type="text" placeholder="Enter your Email"></label><br>
-        <label><input type="text" placeholder="Enter your Phone number"></label><br>
-        <button type="button" class="success">Send</button>
-		<button type="button" class="disabled">Done</button>
-    </form>
-</div>
-
-<div class="form">
-    <h2>Subscribe Form</h2>
-    <form id="subscribeForm">
-        <input type="text" Placeholder="Enter your Email"> <br>
-        <button type=button >Subscribe</button>
-        <button type=button >No, Thanks</button>
-    </form>
-</div>
-
-<div class="logo">
-    <img src="img/logo2.svg">
-</div>
-
-   </div>
+					</div><br>
+					<button type="button" class="success-big">Send Email</button>
+				</form>
+			</div>
+		</div>
+		<div id="right">
+			<h2>Sign in form</h2>
+			<div class="form">
+				<form id="sign">
+					<div class="optinp"><label><i class="fa fa-user"></i><input type="text" class="form-control"
+								placeholder="Username" aria-describedby="basic-addon1" required></label></div><br>
+					<div class="optinp"><label><i class="fa fa-lock"></i><input type="Password" class="form-control"
+								placeholder="Password" aria-describedby="basic-addon1" required></label></div><br>
+					<div class="optinps">
+						<input type="checkbox" name="checkbox-subscribe" id="checkbox-subscribe" class="checkbox"
+							value="">
+						<label for="checkbox-subscribe">
+							<div class="checkbox-div">
+								<div class="checkbox-inner">
+								</div>
+							</div>
+							Remember me
+						</label>
+					</div><br>
+					<button type="button" class="success-big">Sign in</button>
+				</form>
+			</div>
+			<h2>Recover form</h2>
+			<div class="form">
+				<form id="recover">
+					<div class="optinp"><label><i class="fa fa-envelope mail"></i><input type="email"
+								class="form-control" placeholder="Enter your Email" aria-describedby="basic-addon1"
+								required></label></div><br>
+					<div class="optinp"><label><i id="phone" class="fa fa-mobile"></i><input type="number"
+								class="form-control" placeholder="Enter your Phone number"
+								aria-describedby="basic-addon1" required><label></div><br>
+					<button type="button" class="success">Send</button>
+					<button type="button" class="disabled">Done</button>
+				</form>
+			</div>
+			<h2>Subscribe form</h2>
+			<div class="form">
+				<form id="subscribe">
+					<div class="optinp"><label><i class="fa fa-envelope mail"></i><input type="email"
+								class="form-control" placeholder="Email" aria-describedby="basic-addon1"
+								required></label></div><br>
+					<button type="button" class="success">Subscribe</button>
+					<button type="button" class="exit">No, thanks</button>
+				</form>
+			</div>
+			<div class="logobig marginlogo">
+				<img src="img/logo2.svg">
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
