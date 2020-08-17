@@ -4,6 +4,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.logobig {
+  text-align: center;
 }
 
 header .container {
@@ -11,6 +16,7 @@ header .container {
 }
 
 .container {
+  width: 1200px;
   overflow: hidden;
   height: auto;
   margin: 0 auto;
@@ -63,11 +69,13 @@ header .container {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   display: inline-block;
-  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
+  -webkit-box-shadow: 0px 1px 5px 1px;
+          box-shadow: 0px 1px 5px 1px;
 }
 
 .form .optinp:hover {
-  box-shadow: inset 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
+  -webkit-box-shadow: inset 1px 1px 1px 1px;
+          box-shadow: inset 1px 1px 1px 1px;
 }
 
 .form .optinp, textarea {
@@ -75,4 +83,123 @@ header .container {
   width: calc(88% + 2px);
 }
 
+.optinp {
+  color: #a0a0a0;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+h2 {
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+textarea {
+  margin: 3px;
+  outline: 0;
+  border: 0;
+  width: 95%;
+  background-color: #f4f4f4;
+  color: #a0a0a0;
+  font-size: 16px;
+  padding-left: 5px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.optinp i, .optinps i {
+  padding: 8px 12px 8px 5px;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 25px;
+}
+
+.form button {
+  margin: 5px 0px 20px 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
+          box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
+}
+
+.success:active, .success-big:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#659c19), color-stop(47%, #76b31e), to(#86c823));
+  background: linear-gradient(180deg, #659c19 0%, #76b31e 47%, #86c823 100%);
+}
+
+.exit:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bf0f0f), to(#f55667));
+  background: linear-gradient(180deg, #bf0f0f 0%, #f55667 100%);
+}
+
+.form button:hover {
+  -webkit-box-shadow: inset 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
+          box-shadow: inset 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
+}
+
+.success-big {
+  background-color: #86c823;
+  background: -webkit-gradient(linear, left top, left bottom, from(#86c823), color-stop(47%, #76b31e), to(#659c19));
+  background: linear-gradient(180deg, #86c823 0%, #76b31e 47%, #659c19 100%);
+  border: 0;
+  color: #f4f4f4;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  font-size: 18px;
+  width: 89%;
+}
+
+.success {
+  background-color: #86c823;
+  background: -webkit-gradient(linear, left top, left bottom, from(#86c823), color-stop(47%, #76b31e), to(#659c19));
+  background: linear-gradient(180deg, #86c823 0%, #76b31e 47%, #659c19 100%);
+  border: 0;
+  color: #f4f4f4;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  font-size: 18px;
+  width: 40%;
+}
+
+.exit {
+  background-color: #f55667;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f55667), to(#bf0f0f));
+  background: linear-gradient(180deg, #f55667 0%, #bf0f0f 100%);
+  border: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  font-size: 18px;
+  width: 40%;
+  float: right;
+  margin-right: 22px !important;
+}
+
+.disabled {
+  background-color: #c5e0a4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c3dfa1), to(#9dbf77));
+  background: linear-gradient(180deg, #c3dfa1 0%, #9dbf77 100%);
+  /* w3c */
+  border: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  font-size: 18px;
+  width: 40%;
+  float: right;
+  margin-right: 22px !important;
+}
+
+.form label {
+  margin: 5px 5px;
+  padding: 5px;
+}
+
+.logobig, .logo2 {
+  opacity: 50%;
+}
 /*# sourceMappingURL=style.css.map */
