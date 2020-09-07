@@ -126,6 +126,19 @@ textarea {
 	box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
 }
 
+.optinps{
+	margin-left: 15px;
+	display:flex;
+	font-size:1.2em;
+	color: gray;
+
+}
+
+#phone{
+	font-size: 2.5em;
+}
+
+
 //button styling
 
 .success:active, .success-big:active {
@@ -198,3 +211,52 @@ textarea {
 .logobig, .logo2{
 	opacity: 50%;
 }
+
+@media screen and (max-width: 1200px) {
+
+	 
+	
+	#right, 
+	#left {
+		width: 100%;
+		float: none;
+		// margin: 20px 20px 20px 20px;
+		// text-align: center;
+		display: inline-block; 
+		// display: table;
+		
+	}
+	.container{
+		width: 900px
+		// display:block 
+	}
+
+
+
+  }
+  
+  @media screen and (max-width: 900px) {
+
+	 body{
+background-color: white;
+	 }
+	
+	#right, 
+	#left {
+		width: 100%;
+		float: none;
+		// margin: 20px 20px 20px 20px;
+		// text-align: center;
+		display: inline-block; 
+		// display: table;
+		
+	}
+	.container{
+		width: 600px
+		// display:block 
+	}
+
+
+
+  }
+  

@@ -124,6 +124,19 @@ textarea {
           box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
 }
 
+.optinps {
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2em;
+  color: gray;
+}
+
+#phone {
+  font-size: 2.5em;
+}
+
 .success:active, .success-big:active {
   background: -webkit-gradient(linear, left top, left bottom, from(#659c19), color-stop(47%, #76b31e), to(#86c823));
   background: linear-gradient(180deg, #659c19 0%, #76b31e 47%, #86c823 100%);
@@ -201,5 +214,32 @@ textarea {
 
 .logobig, .logo2 {
   opacity: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  #right,
+  #left {
+    width: 100%;
+    float: none;
+    display: inline-block;
+  }
+  .container {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: white;
+  }
+  #right,
+  #left {
+    width: 100%;
+    float: none;
+    display: inline-block;
+  }
+  .container {
+    width: 600px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
