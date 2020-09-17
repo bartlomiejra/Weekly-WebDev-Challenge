@@ -1,262 +1,355 @@
 $form-color: #f4f4f4;
-body {
-    background-image: url("../img/Background.jpg");
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-position: center;
-	font-family: 'Titillium Web', sans-serif;
 
+body {
+  background-image: url("../img/Background.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Titillium Web", sans-serif;
 }
 
-.logobig{
-	text-align: center;
+.logobig {
+  text-align: center;
 }
 
 header .container {
-	height: 200px;
+  height: 200px;
 }
 
 .container {
-	width: 1200px;
-	overflow: hidden;
-	height: auto;
-	margin: 0 auto;
+  width: 1200px;
+  overflow: hidden;
+  height: auto;
+  margin: 0 auto;
 }
 
-#right, 
+#right,
 #left {
-	width: 50%;
+  width: 50%;
 }
 
 #left {
-	float: left;
+  float: left;
 }
-
 
 #right {
-	float: right;
+  float: right;
 }
 
-
 .form {
-	background-color: $form-color;
-	border-radius: 2px;
-	position: relative;
-	width: 85%;
-	margin: 50px auto;
+  background-color: $form-color;
+  border-radius: 2px;
+  position: relative;
+  width: 85%;
+  margin: 50px auto;
 }
 
 .form:before {
-	content: "";
-	background-color: rgba(0,0,0,0.3);
-	border-radius: 3px;
-	position: absolute;
-	margin-left: -20px;
-	margin-top: -20px;
-	width: calc(100% + 40px);
-	height: calc(100% + 40px);
-	z-index: -1;
-
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  position: absolute;
+  margin-left: -20px;
+  margin-top: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  z-index: -1;
 }
-.form .form-control {
-	border: 0;
-	background-color: #f4f4f4;
-	margin: 5px 5px;
-	padding: 10px;
-	width: 76%;
-	font-size: 16px;
-	outline: 0;
-} 
 
-.form .optinp{
-	border: 1px solid rgba(0,0,0,0.3);
-	border-radius: 4px;
-	display: inline-block;
-	box-shadow: 0px 1px 5px 1px;
+.form .form-control {
+  border: 0;
+  background-color: #f4f4f4;
+  margin: 5px 5px;
+  padding: 10px;
+  width: 76%;
+  font-size: 16px;
+  outline: 0;
+}
+
+.form .optinp {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  display: inline-block;
+  box-shadow: 0px 1px 5px 1px;
 }
 
 .form .optinp:hover {
-	box-shadow: inset 1px 1px 1px 1px;
+  box-shadow: inset 1px 1px 1px 1px;
 }
 
-.form .optinp, textarea {
-	margin: 20px 20px 10px 20px;
-	width: calc(88% + 2px);
+.form .optinp,
+textarea {
+  margin: 20px 20px 10px 20px;
+  width: calc(88% + 2px);
 }
 
 .optinp {
-	color: #a0a0a0;
-	margin-left: 15px;
-	margin-top: 10px;
+  color: #a0a0a0;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 
-h2{
-	color: $form-color;
-	text-align: center;
-	font-size: 2.5em;
+h2 {
+  color: $form-color;
+  text-align: center;
+  font-size: 2.5em;
 }
 
 textarea {
-	margin: 3px;
-	outline: 0;
-	border: 0;
-	width: 95%;
-	background-color: #f4f4f4;
-	color: #a0a0a0;
-	font-size: 16px;
-	padding-left: 5px;
-	font-family: 'Titillium Web', sans-serif;
+  margin: 3px;
+  outline: 0;
+  border: 0;
+  width: 95%;
+  background-color: #f4f4f4;
+  color: #a0a0a0;
+  font-size: 16px;
+  padding-left: 5px;
+  font-family: "Titillium Web", sans-serif;
 }
 
-.optinp i, .optinps i {
-	padding: 8px 12px 8px 5px;
-	border-right: 1px solid rgba(0,0,0,0.3);
-	color: rgba(0,0,0,0.3);
-	font-size: 25px;
-	
+.optinp i,
+.optinps i {
+  padding: 8px 12px 8px 5px;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 25px;
 }
 
 .form button {
-	margin: 5px 0px 20px 20px;
-	padding: 10px;
-	text-align: center;
-	border-radius: 4px;
-	cursor: pointer;
-	box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
+  margin: 5px 0px 20px 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
 }
 
-.optinps{
-	margin-left: 15px;
-	display:flex;
-	font-size:1.2em;
-	color: gray;
-
+.optinps {
+  margin-left: 15px;
+  display: flex;
+  font-size: 1.2em;
+  color: gray;
 }
 
-#phone{
-	font-size: 2.5em;
+#phone {
+  font-size: 2.5em;
 }
-
 
 //button styling
 
-.success:active, .success-big:active {
-	background: linear-gradient(180deg, rgba(101,156,25,1) 0%, rgba(118,179,30,1) 47%, rgba(134,200,35,1) 100%);
+.success:active,
+.success-big:active {
+  background: linear-gradient(
+    180deg,
+    rgba(101, 156, 25, 1) 0%,
+    rgba(118, 179, 30, 1) 47%,
+    rgba(134, 200, 35, 1) 100%
+  );
 }
 
 .exit:active {
-	background: linear-gradient(180deg, rgba(191,15,15,1) 0%, rgba(245,86,103,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(191, 15, 15, 1) 0%,
+    rgba(245, 86, 103, 1) 100%
+  );
 }
 
 .form button:hover {
-	box-shadow: inset 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
+  box-shadow: inset 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
 }
 
-.success-big{
-	background-color: #86c823;
-	background: linear-gradient(180deg, rgba(134,200,35,1) 0%, rgba(118,179,30,1) 47%, rgba(101,156,25,1) 100%); 
-	border: 0;
-	color: $form-color;
-	text-shadow: 2px 2px rgba(0,0,0,0.3);
-	letter-spacing: 2px;
-	font-size: 18px;
-	width: 89%;
+.success-big {
+  background-color: #86c823;
+  background: linear-gradient(
+    180deg,
+    rgba(134, 200, 35, 1) 0%,
+    rgba(118, 179, 30, 1) 47%,
+    rgba(101, 156, 25, 1) 100%
+  );
+  border: 0;
+  color: $form-color;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  font-size: 18px;
+  width: 89%;
 }
 
 .success {
-	background-color: #86c823;
-	background: linear-gradient(180deg, rgba(134,200,35,1) 0%, rgba(118,179,30,1) 47%, rgba(101,156,25,1) 100%); 
-	border: 0;
-	color: $form-color;
-	text-shadow: 2px 2px rgba(0,0,0,0.3);
-	letter-spacing: 2px;
-	font-size: 18px;
-	width: 40%;
+  background-color: #86c823;
+  background: linear-gradient(
+    180deg,
+    rgba(134, 200, 35, 1) 0%,
+    rgba(118, 179, 30, 1) 47%,
+    rgba(101, 156, 25, 1) 100%
+  );
+  border: 0;
+  color: $form-color;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  font-size: 18px;
+  width: 40%;
 }
 
 .exit {
-	background-color: #f55667;
-	background: linear-gradient(180deg, rgba(245,86,103,1) 0%, rgba(191,15,15,1) 100%);
-	border: 0;
-	font-family: 'Titillium Web', sans-serif;
-	color: #fff;
-	text-shadow: 2px 2px rgba(0,0,0,0.3);
-	letter-spacing: 2px;
-	font-size: 18px;
-	width: 40%;
-	float: right;
-	margin-right: 22px !important;
+  background-color: #f55667;
+  background: linear-gradient(
+    180deg,
+    rgba(245, 86, 103, 1) 0%,
+    rgba(191, 15, 15, 1) 100%
+  );
+  border: 0;
+  font-family: "Titillium Web", sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  font-size: 18px;
+  width: 40%;
+  float: right;
+  margin-right: 22px !important;
 }
 
 .disabled {
-	background-color: #c5e0a4;
-	background: linear-gradient(180deg, rgba(195,223,161,1) 0%, rgba(157,191,119,1) 100%); /* w3c */
-	border: 0;
-	font-family: 'Titillium Web', sans-serif;
-	color: #fff;
-	text-shadow: 2px 2px rgba(0,0,0,0.3);
-	letter-spacing: 2px;
-	font-size: 18px;
-	width: 40%;
-	float: right;
-	margin-right: 22px !important;
+  background-color: #c5e0a4;
+  background: linear-gradient(
+    180deg,
+    rgba(195, 223, 161, 1) 0%,
+    rgba(157, 191, 119, 1) 100%
+  );
+  /* w3c */
+  border: 0;
+  font-family: "Titillium Web", sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  font-size: 18px;
+  width: 40%;
+  float: right;
+  margin-right: 22px !important;
 }
 
 .form label {
-	margin: 5px 5px;
-	padding: 5px;
+  margin: 5px 5px;
+  padding: 5px;
 }
 
-.logobig, .logo2{
-	opacity: 50%;
+.logobig,
+.logo2 {
+  opacity: 50%;
 }
 
 @media screen and (max-width: 1200px) {
-
-	 
-	
-	#right, 
-	#left {
-		width: 100%;
-		float: none;
-		// margin: 20px 20px 20px 20px;
-		// text-align: center;
-		display: inline-block; 
-		// display: table;
-		
-	}
-	.container{
-		width: 900px
-		// display:block 
-	}
-
-
-
+  #right,
+  #left {
+    width: 100%;
+    float: none;
+    // margin: 20px 20px 20px 20px;
+    // text-align: center;
+    display: inline-block;
+    // display: table;
   }
-  
-  @media screen and (max-width: 900px) {
 
-	 body{
-background-color: white;
-	 }
-	
-	#right, 
-	#left {
-		width: 100%;
-		float: none;
-		// margin: 20px 20px 20px 20px;
-		// text-align: center;
-		display: inline-block; 
-		// display: table;
-		
-	}
-	.container{
-		width: 600px
-		// display:block 
-	}
-
-
-
+  .container {
+    width: 900px; // display:block
   }
-  
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: white;
+  }
+
+  #right,
+  #left {
+    width: 100%;
+    float: none;
+    // margin: 20px 20px 20px 20px;
+    // text-align: center;
+    display: inline-block;
+    // display: table;
+  }
+
+  .container {
+    width: 600px; // display:block
+  }
+}
+
+// custom checkbox
+
+.optinps {
+  display: block;
+  position: relative;
+  // padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.optinps input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 6;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.optinps:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.optinps input:checked ~ .checkmark {
+  background-color: #86c823;
+  margin: 5px 10px 20px 15px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.optinps input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.optinps .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkboxText {
+  margin-left: 43px;
+}
+
+// styling dropdown list
+#droplist {
+  color: #444;
+}
