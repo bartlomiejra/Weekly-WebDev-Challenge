@@ -1,82 +1,100 @@
 html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
+  margin: 0;
+  padding: 20px;
 }
 
 .container {
-    overflow: hidden;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .left {
-    float: left;
+  float: left;
 }
 
 .right {
-    float: right;
+  float: right;
 }
 
 h1 {
-    font-family: Inconsolata;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 25px;
-    letter-spacing: -0.08em;
-    text-transform: uppercase;
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
 
-    color: #333333;
+  color: #333333;
 }
 
-.right>p {
-    font-family: Space Mono;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: -0.035em;
-
-
+.right > p {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
 }
 
 h2 {
-    font-family: Space Mono;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 95px;
-    letter-spacing: -0.035em;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
 
-    /* Gray 1 */
-    color: #333333;
+  /* Gray 1 */
+  color: #333333;
 }
 
 footer {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-    color: #333333;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #333333;
+  display: flex;
+  justify-content: center;
 }
 
 img {
-    width: 100%;
-    max-width: 800px;
+  width: 100%;
+  max-width: 800px;
 }
 
 button {
-    background: #333333;
+  background: #333333;
+  padding: 13px;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
 
+  /* identical to box height */
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
 
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  .container {
+    display: block;
+  }
 }
