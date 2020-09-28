@@ -1,5 +1,5 @@
 body {
-  background-image: url("../img/Background.jpg");
+  background-image: url("../img/background.jpg");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,6 +9,7 @@ body {
 
 .logobig {
   text-align: center;
+
 }
 
 header .container {
@@ -70,12 +71,12 @@ header .container {
   border-radius: 4px;
   display: inline-block;
   -webkit-box-shadow: 0px 1px 5px 1px;
-          box-shadow: 0px 1px 5px 1px;
+  box-shadow: 0px 1px 5px 1px;
 }
 
 .form .optinp:hover {
   -webkit-box-shadow: inset 1px 1px 1px 1px;
-          box-shadow: inset 1px 1px 1px 1px;
+  box-shadow: inset 1px 1px 1px 1px;
 }
 
 .form .optinp,
@@ -123,7 +124,7 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   -webkit-box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
-          box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
+  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
 }
 
 .optinps {
@@ -152,7 +153,7 @@ textarea {
 
 .form button:hover {
   -webkit-box-shadow: inset 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
-          box-shadow: inset 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
+  box-shadow: inset 0px 1px 5px 1px rgba(50, 50, 50, 0.36);
 }
 
 .success-big {
@@ -221,12 +222,14 @@ textarea {
 }
 
 @media screen and (max-width: 1200px) {
+
   #right,
   #left {
     width: 100%;
     float: none;
     display: inline-block;
   }
+
   .container {
     width: 900px;
   }
@@ -236,12 +239,14 @@ textarea {
   body {
     background-color: white;
   }
+
   #right,
   #left {
     width: 100%;
     float: none;
     display: inline-block;
   }
+
   .container {
     width: 600px;
   }
@@ -279,12 +284,12 @@ textarea {
 }
 
 /* On mouse-over, add a grey background color */
-.optinps:hover input ~ .checkmark {
+.optinps:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.optinps input:checked ~ .checkmark {
+.optinps input:checked~.checkmark {
   background-color: #86c823;
   margin: 5px 10px 20px 15px;
 }
@@ -297,7 +302,7 @@ textarea {
 }
 
 /* Show the checkmark when checked */
-.optinps input:checked ~ .checkmark:after {
+.optinps input:checked~.checkmark:after {
   display: block;
 }
 
@@ -320,4 +325,5 @@ textarea {
 #droplist {
   color: #444;
 }
+
 /*# sourceMappingURL=style.css.map */
