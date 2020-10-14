@@ -20,6 +20,7 @@ body {
 
 .left {
   float: left;
+ 
 }
 
 .right {
@@ -72,11 +73,19 @@ footer {
 }
 
 img {
+
   width: 100%;
   max-width: 800px;
+  transition: all .6s;
 }
 
+img:hover{
+  
+  transform: translate(0px, -20px);
+  }
+  
 button {
+  border: none;
   background: #333333;
   padding: 13px;
   font-family: Space Mono;
@@ -87,8 +96,14 @@ button {
   letter-spacing: -0.035em;
   text-transform: uppercase;
   color: #ffffff;
+  transition: all .2s ease-in-out;
+
 }
 
+button:hover{
+  transform: scale(1.1);
+ cursor: pointer;
+}
 //mobile
 @media only screen and (max-width: 1000px) {
   body {
