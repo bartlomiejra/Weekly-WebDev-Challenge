@@ -23,18 +23,23 @@
   <body>
     <header>
       <div class="logo">THIS INTERIOR</div>
+      <button class="hamburger">
+        <span class="hamburger__box">
+          <span class="hamburger__inner"></span>
+        </span>
+      </button>
       <nav id="navigation">
-        <ul>
-          <li>
-            <a href="#" class="active">Home</a>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="n">Home</a>
           </li>
-          <li>
+          <li class="navigation__item">
             <a href="#" class="active">Collection</a>
           </li>
-          <li>
+          <li class="navigation__item">
             <a href="#" class="active">About</a>
           </li>
-          <li>
+          <li class="navigation__item">
             <a href="#" class="active">Contact</a>
           </li>
         </ul>
@@ -70,5 +75,16 @@
     </main>
 
     <footer>bartlomiejra@DevCHallenges.io</footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector("#navigation");
+
+      const handleClick = () => {
+        hamburger.classList.toggle("hamburger--active");
+        nav.classList.toggle("navigation--active");
+      };
+
+      hamburger.addEventListener("click", handleClick);
+    </script>
   </body>
 </html>
