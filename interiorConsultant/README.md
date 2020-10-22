@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="(https://github.com/bartlomiejra/Weekly-WebDev-Challenge/tree/master/interiorConsultant)">
       Solution
     </a>
     <span> | </span>
@@ -46,8 +46,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 - What have you learned/improved?
 - I lerned how to use absolute and relative position property.
 - https://css-tricks.com/how-to-stack-elements-in-css/
-
-- Your wisdom? :)
+- This challenge taught me how to make a hamburger menu.
 
 
 
@@ -59,7 +58,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 
 ## Contact
-
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@bartlomiejra](https://{github.com/bartlomiejra})
+- Twitter [@your-twitter](https://{twitter.com/rachanski_b})

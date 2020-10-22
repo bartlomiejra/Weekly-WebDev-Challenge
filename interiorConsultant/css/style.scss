@@ -1,357 +1,361 @@
 html,
 body {
-    //   min-height: 100vh;
-    font-family: 'Crimson Pro', serif;
-    font-size: 18px;
-    color: white;
-    margin: 1em;
-    background-color: black;
-    // max-width: 1300px;
-    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
+  font-family: 'Crimson Pro', serif;
+  font-size: 18px;
+  color: white;
+  margin: 1em;
+  background-color: black;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
 
 header {
 
 
 
-    .logo {
-        height: 150px;
-        font-size: 14px;
-        border: solid 1px;
-        font-family: Crimson Pro;
-        font-style: normal;
-        font-weight: 200;
-    }
+  .logo {
+    height: 150px;
+    font-size: 16px;
+    border: solid 1.2px;
+    font-family: Crimson Pro;
+    font-style: normal;
+    font-weight: 200;
+  }
 
-    #navigation {
+  .navigation {
 
-        justify-content: center;
-        text-align: center;
-        float: right;
-
-
-    }
+    justify-content: center;
+    text-align: center;
+    float: right;
 
 
-    * {
-        display: inline;
-        cursor: pointer;
+  }
 
-    }
 
-    li {
-        text-align: center;
-        margin: 25px;
-    }
+  * {
+    display: inline;
+    cursor: pointer;
 
-    li a {
+  }
 
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        color: white;
-        text-decoration: none;
-        text-align: center;
-        transition: all .2s ease-in-out;
+  li {
+    text-align: center;
+    margin: 25px;
+  }
 
-    }
+  li a {
 
-    li a:hover{
-     text-decoration: bold;
+    font-family: Montserrat;
+    font-style: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: all .2s ease-in-out;
+
+  }
+
+  li a:hover {
+    text-decoration: bold;
     color: rgb(158, 60, 4);
-     transform: scale(1.1);
-     text-decoration: 5px bold;
+    transform: scale(1.1);
+    text-decoration: 5px bold;
 
-    }
+  }
 }
 
 
 
 h2 {
-    font-size: 4vw;
-    font-family: Lora;
+  font-size: 36px;
+  font-family: Lora;
 
 }
 
 
 .text>p {
 
-    font-family: Montserrat;
-    font-weight: 300;
-    font-size: 2vw;
-    color: silver;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 20px;
+  color: silver;
 
 }
 
 text.a {
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 18px;
+  font-family: 18px, Montserrat;
+
 }
 
 .container {
-    padding-top: 30px;
-
-    margin: 20px;
-    display: grid;
-    // height: 90vh;
-    grid-template-columns: 1fr 2fr;
+  padding-top: 30px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 
 .text {
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 
 .photo {
-    position: relative;
-    // transform: matrix(-1, 0, 0, 1, 0, 0);
-    
+  position: relative;
+  // transform: matrix(-1, 0, 0, 1, 0, 0);
+
 }
 
 .photo>img {
-    float: right;
-    display: flex;
-    max-width: 75%;
-    z-index: 3;
-    margin-bottom: 45px;
-    
+  float: right;
+  display: flex;
+  max-width: 75%;
+  z-index: 3;
+  margin-bottom: 45px;
+
 }
 
 
 
-footer{
-    font-style: normal;
-    font-weight: 600;
-    display: flex;
-    text-align: center;
-    justify-content: center;
- height: 10px;
-//  position: absolute;
-//  bottom: 0;
- height: 2.5rem; 
+footer {
+  font-style: normal;
+  font-weight: 600;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 10px;
+  // position: absolute;
+  height: 2.5rem;
+  font-size: 1vw;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 100px;
 
- font-size: 1vw;
- position: absolute;
- bottom: 0;
- margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-text-align: center;
- 
 }
 
 
 .small {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-// grid-template-rows: 1fr 1fr 1fr;
-    position: absolute;
-    bottom: -30px;
-    right: 30px;
-    z-index: 3;
-    width: 50%;
-    height: 35%;
-    background-color:black;
-    grid-template-areas:
-        "img avatar  avatar avatar . ."
-        
-        " p p p p . . ";
-   
-img{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  // grid-template-rows: 1fr 1fr 1fr;
+  position: absolute;
+  bottom: -30px;
+  right: 30px;
+  z-index: 3;
+  width: 50%;
+  height: 35%;
+  background-color: black;
+  grid-template-areas:
+    "img avatar  avatar avatar . ."
+
+    " p p p p . . ";
+
+  img {
     grid-area: img;
     max-width: 5vw;
-    
-} 
 
-img{
+  }
+
+  img {
     border-radius: 50%;
-}
-.avatar{  
+  }
+
+  .avatar {
     justify-content: center;
     flex-direction: column;
     grid-area: avatar;
     // margin: 20px 10px 10px 20px;
-}
+  }
 
- .name{
+  .name {
     font-size: 1vw;
-    line-height:15px;
-}
+    line-height: 15px;
+  }
 
-.work{
+  .work {
     color: silver;
     font-size: 0.8vw;
-}
+  }
 
 
-p{
+  p {
     margin: 0;
     padding: 0;
     grid-area: p;
     font-size: 1.8vw;
+  }
 }
+
+
+.text>a>img {
+  background-color: white;
+
+}
+
+.fa-long-arrow-right {
+  margin-left: 10px;
+
+}
+
+.text>a {
+  transition: all .1s;
+}
+
+.text>a:hover {
+
+  border-style: solid;
+
+
+}
+
+.hamburger {
+  display: none;
 }
 
 
-.text>a>img{
-   background-color: white;
-    
-}
 
-.fa-long-arrow-right{
-    margin-left: 10px;
-    
-}
-.text>a{
-    transition: all .1s;
-}
-
-.text>a:hover{
-
-    border-style: solid ;
-
-
-}
-.hamburger{
-    display: none;
-}
 
 
 @media screen and (max-width: 900px) {
-    
 
-    .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr;
-    }
-    .text>p{
-        font-family: Montserrat;
-        font-weight: 300;
-        font-size: 3vw;
-        color: silver;
-        max-width: 75%;
-    }
 
-    
-    //   hamburger menu
-.hamburger{
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
+  }
+
+  .text>p {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 3vw;
+    color: silver;
+    max-width: 75%;
+  }
+
+
+  .photo>img {
+    max-width: 100%;
+
+  }
+
+
+  //   hamburger menu
+  .hamburger {
     float: right;
     display: grid;
-   
     color: red;
-    background-color:white;
-        cursor: pointer;
-        background-color: transparent;
-        border: 0;
-        margin: 0;
-      }
-      
-
-
-      .hamburger, #navigation {
-        transition: transform .3s .1s ease-in-out;
-      }
-      
-      .hamburger--active {
-        // transform: translatex(-250px);
-        
-      
-      }
-       
-      .hamburger__box {
-        width: 35px;
-        height: 24px;
-        display: inline-block;
-        position: relative;
-      }
-      
-      @mixin hamburger-line {
-        width: 100%;
-        height: 3px;
-        background-color: white;
-        position: absolute;
-      }
-      
-      .hamburger__inner {
-        @include hamburger-line;
-        
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        transition: background-color .1s .2s ease-in-out;
-      }
-      
-      .hamburger__inner::before,
-      .hamburger__inner::after {
-        @include hamburger-line;
-        
-        content: '';
-        left: 0;
-        transition: transform .2s .2s ease-in-out;
-      } 
-      
-      .hamburger__inner::before {
-        top: -10px;
-      }
-      
-      .hamburger__inner::after {
-        top: 10px;
-      }
-      
-      .hamburger--active .hamburger__inner {
-        background-color: transparent;
-      }
-      
-      .hamburger--active .hamburger__inner:before {
-        transform: translateY(10px) rotate(45deg);
-      }
-      
-      .hamburger--active .hamburger__inner:after {
-        transform: translateY(-10px) rotate(-45deg);
-      }
-      
-
-
-#navigation {
-    display: grid;
-    height: 100vh;
-    width: 100vw;
-    // background-color: black;
     background-color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+  }
+
+
+
+  .hamburger,
+  .navigation {
+    transition: transform .3s .1s ease-in-out;
+  }
+
+
+
+  .hamburger__box {
+    width: 35px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    z-index: 99;
+
+  }
+
+  @mixin hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+  }
+
+  .hamburger__inner {
+    @include hamburger-line;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color .1s .2s ease-in-out;
+  }
+
+  .hamburger__inner::before,
+  .hamburger__inner::after {
+    @include hamburger-line;
+    content: '';
+    left: 0;
+    transition: transform .2s .2s ease-in-out;
+  }
+
+  .hamburger__inner::before {
+    top: -10px;
+  }
+
+  .hamburger__inner::after {
+    top: 10px;
+  }
+
+  .hamburger--active .hamburger__inner {
+    background-color: transparent;
+  }
+
+  .hamburger--active .hamburger__inner:before {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .hamburger--active .hamburger__inner:after {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  .navigation {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: black;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateX(-500px);
-    z-index: 99;
+    transform: translateX(-900px);
+    z-index: 60;
+    transition: transform .3s .1s ease-in-out;
   }
-  
-  #navigation--active {
-    transform: translateX(300px);
-    background-color: red;
+
+  .navigation--active {
+    transform: translateX(0px);
   }
-  
+
   .navigation__list {
-    margin-top: 50px;
+    padding: 0;
+    font-size: 2rem;
+    margin-top: 100px;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
   }
-  
+
   .navigation__item {
     margin-bottom: 20px;
   }
-    a {
-      text-decoration: none;
-      color: white;
-    }
-  
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
 }
-
-
-

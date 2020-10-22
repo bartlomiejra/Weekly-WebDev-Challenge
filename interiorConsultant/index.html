@@ -28,19 +28,19 @@
           <span class="hamburger__inner"></span>
         </span>
       </button>
-      <nav id="navigation">
+      <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="n">Home</a>
+            <a href="index.html" class="n">Home</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="active">Collection</a>
+            <a href="index.html" class="active">Collection</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="active">About</a>
+            <a href="index.html" class="active">About</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="active">Contact</a>
+            <a href="index.html" class="active">Contact</a>
           </li>
         </ul>
       </nav>
@@ -75,9 +75,10 @@
     </main>
 
     <footer>bartlomiejra@DevCHallenges.io</footer>
+
     <script>
       const hamburger = document.querySelector(".hamburger");
-      const nav = document.querySelector("#navigation");
+      const nav = document.querySelector(".navigation");
 
       const handleClick = () => {
         hamburger.classList.toggle("hamburger--active");
