@@ -10,3 +10,35 @@ body {
 
     
 }
+
+input#email::before{
+    content: "→";
+    background: pink;
+    // content: "<i class="material-icons md-light">face</i>"
+}
+
+h2::before{
+    content: "→";
+    background: pink;
+    
+}
+
+
+.forms i { 
+    position: absolute; 
+} 
+  
+.forms { 
+    width: 100%; 
+    margin-bottom: 10px; 
+} 
+  
+.icon { 
+    padding: 5px; 
+    min-width: 50px; 
+} 
+  
+.input { 
+    padding: 10px; 
+    text-align: center; 
+} 
