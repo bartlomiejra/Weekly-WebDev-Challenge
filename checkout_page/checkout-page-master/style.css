@@ -1,16 +1,23 @@
-@charset "UTF-8";
 body {
   background: white;
 }
 
-input#email::before {
-  content: "→";
-  background: pink;
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-h2::before {
-  content: "→";
-  background: pink;
+form {
+  max-width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
 }
 
 .forms i {
@@ -18,22 +25,43 @@ h2::before {
 }
 
 .forms {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 10px;
 }
 
-/* Style the form icons */
+.checkout {
+  max-width: 50%;
+  background: #F2F2F2;
+  border-radius: 12px;
+}
+
+label {
+  display: -ms-grid;
+  display: grid;
+}
+
+input {
+  border: 1px solid #828282;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+}
+
 .icon {
   position: absolute;
-  padding: 10px;
+  padding: 30px 8px;
   color: gray;
   min-width: 50px;
   text-align: center;
-}
-
-/* Style the input fields */
-input {
-  padding: 10px;
-  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

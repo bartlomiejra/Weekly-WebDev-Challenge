@@ -11,16 +11,16 @@ body {
     
 }
 
-input#email::before{
-    content: "→";
-    background: pink;
-    // content: "<i class="material-icons md-light">face</i>"
+.container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
 
-h2::before{
-    content: "→";
-    background: pink;
-    
+
+form{
+   max-width: 50%;
+    flex: 1 1;
 }
 
 
@@ -29,22 +29,43 @@ h2::before{
 } 
   
 .forms { 
-    width: 100%; 
+display: flex;
+flex-direction: column;
     margin-bottom: 10px; 
 } 
+
+.checkout{
+    max-width: 50%;
+    background: #F2F2F2;
+    border-radius: 12px;
+}
   
-/* Style the form icons */
-.icon {
-    position: absolute;
+
+label{
+    display: grid;
+}
+
+
+
+input {
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 12px;
+      margin: 5px;
+      border-radius: 10px;
     padding: 10px;
+    outline: none;
+  }
+
+
+  .icon {
+    position: absolute;
+    padding: 30px 8px;
     color: gray;
     min-width: 50px;
     text-align: center;
   }
+
+
+ 
   
-  /* Style the input fields */
-  input {
-    // position: relative;
-    padding: 10px;
-    outline: none;
-  }
