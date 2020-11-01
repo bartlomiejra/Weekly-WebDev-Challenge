@@ -22,13 +22,18 @@ h2::before {
   margin-bottom: 10px;
 }
 
+/* Style the form icons */
 .icon {
-  padding: 5px;
+  position: absolute;
+  padding: 10px;
+  color: gray;
   min-width: 50px;
+  text-align: center;
 }
 
-.input {
+/* Style the input fields */
+input {
   padding: 10px;
-  text-align: center;
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

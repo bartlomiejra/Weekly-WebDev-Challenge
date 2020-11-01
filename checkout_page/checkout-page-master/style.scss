@@ -33,12 +33,18 @@ h2::before{
     margin-bottom: 10px; 
 } 
   
-.icon { 
-    padding: 5px; 
-    min-width: 50px; 
-} 
+/* Style the form icons */
+.icon {
+    position: absolute;
+    padding: 10px;
+    color: gray;
+    min-width: 50px;
+    text-align: center;
+  }
   
-.input { 
-    padding: 10px; 
-    text-align: center; 
-} 
+  /* Style the input fields */
+  input {
+    // position: relative;
+    padding: 10px;
+    outline: none;
+  }
