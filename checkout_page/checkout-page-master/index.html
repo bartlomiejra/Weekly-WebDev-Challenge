@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1,
   maximum-scale=5" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet"> 
   <link rel="icon" href="devchallenges.png" />
   <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
   <link rel="stylesheet" href="style.css">
@@ -18,13 +18,17 @@
 
 
 <body>
-  <h1>Checkout</h1>
+  <div class="allpage">
+  <header>
+    <h2>Checkout</h2>
+    </header>
+  
   <main class="container">
     <form action="" class="forms">
-
+      
       <h2>Contact information</h2>
 
-      <label for="email"> E-mail:<br>
+      <label for="email"> E-mail:
         <i class="material-icons md-dark icon">mail</i>
         <input type="text" id="email" name="email" placeholder="Enter your email...">
       </label>
@@ -43,33 +47,39 @@
 
       <label for="fullName"> Address
         <i class="material-icons md-dark icon">house</i>
-        <input type="text" id="fullName" class=fullName name="fullName" placeholder="Rodney Cotton">
+        <input type="text" id="address" class=fullName name="fullName" placeholder="Your address..">
       </label>
 
       <label for="fullName"> City
         <i class="material-icons md-dark icon">location_city</i>
-        <input type="text" id="fullName" class=fullName name="fullName" placeholder="Rodney Cotton">
+        <input type="text" id="city" class=city name="fullName" placeholder="Rodney Cotton">
       </label>
-
-      <label for="county"> Country
+<div class="twoinrow">
+      <label for="county" id="country"> Country
         <i class="material-icons md-dark icon">public</i>
-        <select type="text" id="county" class=county name="county" placeholder="Your country..">
+        <select type="text" id="county" class=county name="county" placeholder="Your country.."></select>
       </label>
 
-      <label for="postalcode"> Postal code
-        <i class="material-icons md-dark icon">unread_mailbox</i>
-        <input type="text" id="postalcode" class=postalcode name="postalcode" placeholder="Your postal code..">
+      <label for="postalcode" id="postalcode"> Postal code
+        <i class="material-icons md-dark icon">mailbox</i>
+       <input type="text" id="postalcode" class=postalcode name="postalcode" placeholder="Your postal code..">
       </label>
-
+    </div>
       <input type="checkbox"> Save this information for next time
     </form>
 
     <div class="checkout">
-asdsaasdasasdasddddddddddddddddddddddddddddddddddddddddddddddddddasdasdsad
+      <div class="box">
+
+
+      </div>
+
     </div>
 
 
 
   </main>
+  <footer>bartlomiejra@DevCHallenges.io</footer>
+</div>
 </body>
 </html>
