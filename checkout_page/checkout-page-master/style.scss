@@ -36,7 +36,6 @@ justify-content: center;
 
 
 form{
-    max-height: 75%;
    max-width: 50%;
     flex: 1 1;
 }
@@ -47,6 +46,8 @@ form{
 } 
   
 .forms { 
+ 
+    width: 50%;
 display: flex;
 flex-direction: column;
     margin-bottom: 10px;
@@ -57,12 +58,11 @@ flex-direction: column;
 
 .checkout{
 
-    display: flex;
     width: 50%;
+    display: flex;
+    flex-direction: column;
     background: #F2F2F2;
     border-radius: 12px;
-  
-   
 }
 
   
@@ -152,11 +152,11 @@ footer, header{
 
 footer{
     display:flex;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 button{
-
     background: #F2994A;
 border-radius: 12px;
 color: white;
@@ -164,14 +164,51 @@ color: white;
 padding: 15px 32px;
 text-align: center;
 text-decoration: none;
-margin-top: auto; 
-
-
+margin-top: 15px;
 }
+
+
+
 
 #checkboxtest{
     text-align: center;
 font-size: 0.8em;
 margin-top: 5px;
 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+      "photo photo photo photo title title title"
+      "photo photo photo photo Price Price Price"
+      "photo photo photo photo quantity quantity quantity";
+      margin: 20px 20px 20px 20px;
+    
+  }
+
+
+
+  .photo { grid-area: photo;
+     
+ img{
+    border-radius: 20px; 
+    height: 100px;
+    width: 100px;
+ }
+}
+  .title { grid-area: title; }
+
+  .price { grid-area: Price; }
+
+  .quantity { grid-area: quantity; 
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+hr{color: red;
 }
