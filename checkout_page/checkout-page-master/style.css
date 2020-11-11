@@ -2,22 +2,23 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
   background: white;
+  font-size: 16px;
 }
 
 h1 {
   color: #4E5150;
   -webkit-transform: rotate(-0.02deg);
           transform: rotate(-0.02deg);
+  font-size: 2.25rem;
 }
 
 h2 {
-  font-size: 1,1em;
-  margin: 0;
+  font-size: 1.125rem;
+  margin: 30px 0px 0px 0px;
   color: #4F4F4F;
 }
 
 .container {
-  height: calc(100% - 100px);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,13 +33,6 @@ form {
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
-}
-
-.forms i {
-  position: absolute;
-}
-
-.forms {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,8 +44,12 @@ form {
   margin: 0 50px 10px 0;
 }
 
+form i {
+  position: absolute;
+}
+
 .checkout {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +69,7 @@ label {
   display: -ms-grid;
   display: grid;
   margin-top: 10px;
+  font-size: 0.75rem;
 }
 
 input {
@@ -109,7 +108,8 @@ select {
   outline: none;
 }
 
-label#country, label#postalcode {
+label#country,
+label#postalcode {
   width: 50%;
 }
 
@@ -130,7 +130,8 @@ input#fullName {
   position: absolute;
 }
 
-footer, header {
+footer,
+header {
   height: 50px;
   width: 100%;
 }
@@ -160,23 +161,22 @@ button {
 
 #checkboxtest {
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.75em;
   margin-top: 5px;
 }
 
 .grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px 20px;
-      grid-template-areas: "photo  title" "photo    Price" "photo    quantity";
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "photo  title" "photo    Price" "photo    Price" "photo    quantity" "photo    quantity";
   margin: 20px 20px 20px 20px;
 }
 
 .photo {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 5;
   -ms-grid-column: 1;
   grid-area: photo;
 }
@@ -195,14 +195,37 @@ button {
 
 .price {
   -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: Price;
+  color: #F2994A;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price #old {
+  margin-left: 5px;
+  color: #4E5150;
+  font-size: 0.8rem;
+  text-decoration: line-through;
 }
 
 .quantity {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: quantity;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid #828282;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -211,5 +234,33 @@ button {
 
 hr {
   color: red;
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    background-color: green;
+    display: -ms-grid;
+    display: grid;
+  }
+  form {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .checkout {
+    color: white;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    background-color: yellow;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    background-color: red;
+  }
 }
 /*# sourceMappingURL=style.css.map */
