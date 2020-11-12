@@ -60,7 +60,15 @@
 <div class="twoinrow">
       <label for="county" id="country"> Country
         <i class="material-icons md-dark icon">public</i>
-        <select type="text" id="county" class=county name="county" placeholder="Your country.." required></select>
+        <select type="text" id="county" class=county name="county" placeholder="Your country.." required>
+          <option value="Poland">Poland</option>
+          <option value="England">England</option>
+          <option value="USA">USA</option>
+          <option value="China">China</option>
+
+
+
+        </select>
       </label>
 
       <label for="postalcode" id="postalcode"> Postal code
@@ -88,7 +96,10 @@
             $54.99 <div id="old"> $94.99</div>
            </div>
           <div class="quantity"> 
-            - 1 + </div>
+            <i class="material-icons md-dark icon">mail</i>
+            <span>1</span>  
+            <i class="material-icons md-dark icon">mail</i>
+          </div>
         </div>
         
         <div class="grid-container">
@@ -104,11 +115,15 @@
         </div>
 
         <hr>
-        <p>Shipping $ 19</p>
+        <div class="twoinrow2"> <div class="text"> Shipping </div>
+       <div class="cost">$ 19</div> 
+        </div>
         <hr>
-        <p>Total $149.98</p>
-        
-      
+        <div class="twoinrow2">
+          <div class="text"> Total </div>
+       <div class="cost">$149.98</div> 
+        </div>
+       
 
     </div>
 

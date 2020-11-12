@@ -1,3 +1,9 @@
+//* - podpisy w label umieścić po lewej stronie
+//* ikony przy ilości towaru dodać
+//* button daj po prawejo
+
+
+
 // colors
 
 
@@ -6,6 +12,7 @@ $checkout: #4E5150;
 $gray1: #333333;
 $gray2: #4F4F4F;
 $gray3: #828282;
+$gray4: #bdbdbd;
 
 
 
@@ -16,10 +23,10 @@ body {
     font-size: 16px;
 
 
-
 }
 
 h1 {
+    margin-left: 50px;
     color: $checkout;
     transform: rotate(-0.02deg);
     font-size: 2.25rem;
@@ -68,6 +75,11 @@ form i {
     border-radius: 12px;
     width: 350px;
     height: 500px;
+
+    p{
+        color: $gray1;
+        margin-left: 15px;
+    }
 }
 
 
@@ -135,7 +147,12 @@ label#postalcode {
 
 
 }
-
+.twoinrow2{
+    margin: 5px 15px 5px 15px;
+   color: $gray1;
+   display: flex;
+  justify-content: space-between; 
+}
 
 input#fullName {
     font-weight: bold;
@@ -170,7 +187,6 @@ button {
     background: #F2994A;
     border-radius: 12px;
     color: white;
-
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -203,7 +219,11 @@ button {
 
 }
 
-
+hr{
+    width: 90%;
+    color: $gray4;
+    
+}
 
 .photo {
     grid-area: photo;
@@ -255,39 +275,56 @@ button {
    
 }
 
-hr {
-    color: red;
-}
+
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
+    h1{
+        margin-left: 15px;
+    }
     .container{
-        background-color:green;
+     
+        // background-color:green;
         display: grid;
     }
-
-    form{
-        order: 2;
-    }
     .checkout{
-color: white;
+        width: 90vw;
+        height: auto;
     }
+   
+    form{
+        width: 90vw;
+        order: 2;
+        max-width: 1000px;
+        margin: 0 0 0 0;
+    }
+
+   .photo img{
+        height: 25vw;
+width: 25vw;
+    }
+     button{
+        margin-bottom: 70px;
+     }
  }
 
 
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { 
-.container{
-    background-color:yellow;
-}
-}
+// @media (max-width: 767.98px) { 
+// .container{
+//     background-color:yellow;
+// }
+
+// }
 
 
 
 
-@media (max-width: 575.98px) { 
-.container{
-    background-color:red;
-}
-}
+// @media (max-width: 575.98px) { 
+// .container{
+// }
+// }
+
+
+
