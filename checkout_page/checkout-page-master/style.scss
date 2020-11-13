@@ -1,6 +1,6 @@
 //* - podpisy w label umieścić po lewej stronie
-//* ikony przy ilości towaru dodać
-//* button daj po prawejo
+
+
 
 
 
@@ -13,6 +13,8 @@ $gray1: #333333;
 $gray2: #4F4F4F;
 $gray3: #828282;
 $gray4: #bdbdbd;
+$header: #4E5150;
+$footer: #A9A9A9;
 
 
 
@@ -27,14 +29,14 @@ body {
 
 h1 {
     margin-left: 50px;
-    color: $checkout;
+    color: $header;
     transform: rotate(-0.02deg);
     font-size: 2.25rem;
 }
 
 h2 {
     font-size: 1.125rem;
-   margin: 30px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
     color: $gray2;
 
 }
@@ -76,7 +78,7 @@ form i {
     width: 350px;
     height: 500px;
 
-    p{
+    p {
         color: $gray1;
         margin-left: 15px;
     }
@@ -93,13 +95,13 @@ label {
 
 input {
     color: $gray3;
-    text-align: center;
+    // text-align: center;
     border: 1px solid #828282;
     box-sizing: border-box;
-    border-radius: 12px;
     margin: 5px;
-    border-radius: 10px;
-    padding: 10px;
+    padding: 10px 50px 10px 10px;
+    padding-left: 50px;
+    border-radius: 12px;
     outline: none;
 
 
@@ -118,6 +120,11 @@ input {
     color: $gray3;
     min-width: 50px;
     text-align: center;
+}
+
+.icon2{
+    margin: 0px 15px 0px 15px;
+    color: $gray3;
 }
 
 
@@ -147,11 +154,12 @@ label#postalcode {
 
 
 }
-.twoinrow2{
+
+.twoinrow2 {
     margin: 5px 15px 5px 15px;
-   color: $gray1;
-   display: flex;
-  justify-content: space-between; 
+    color: $gray1;
+    display: flex;
+    justify-content: space-between;
 }
 
 input#fullName {
@@ -177,12 +185,15 @@ header {
 }
 
 footer {
+    color: $footer;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 button {
+
+
 
     background: #F2994A;
     border-radius: 12px;
@@ -194,7 +205,10 @@ button {
     width: 166px;
 }
 
-
+.submit {
+    display: flex;
+    justify-content: flex-end
+}
 
 
 #checkboxtest {
@@ -215,14 +229,14 @@ button {
         "photo    Price"
         "photo    quantity"
         "photo    quantity";
-    margin: 20px 20px 20px 20px;
+        margin: 20px 50px 20px 20px;
 
 }
 
-hr{
+hr {
     width: 90%;
     color: $gray4;
-    
+
 }
 
 .photo {
@@ -244,69 +258,73 @@ hr{
     color: $orange;
     font-size: 1rem;
     display: flex;
-  
 
-    #old{
+
+    #old {
         margin-left: 5px;
-        color:$checkout;
+        color: $checkout;
         font-size: 0.8rem;
         text-decoration: line-through;
-        
 
-        
 
-        
+
+
+
 
 
     }
 }
 
 .quantity {
-    
+
     grid-area: quantity;
- display: flex;
- align-items: center;
- justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     // text-align: center;
     border: 1px solid #828282;
     box-sizing: border-box;
-    border-radius: 12px;
+    border-radius: 12px; 
 
-   
+
+
 }
 
 
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { 
-    h1{
+@media (max-width: 991.98px) {
+    h1 {
         margin-left: 15px;
     }
-    .container{
-     
+  
+    .container {
+
         // background-color:green;
         display: grid;
     }
-    .checkout{
+
+    .checkout {
         width: 90vw;
         height: auto;
     }
-   
-    form{
+
+    form {
         width: 90vw;
         order: 2;
         max-width: 1000px;
         margin: 0 0 0 0;
     }
 
-   .photo img{
+    .photo img {
         height: 25vw;
-width: 25vw;
+        width: 25vw;
     }
-     button{
+
+    button {
         margin-bottom: 70px;
-     }
- }
+    }
+}
 
 
 
@@ -325,6 +343,3 @@ width: 25vw;
 // .container{
 // }
 // }
-
-
-

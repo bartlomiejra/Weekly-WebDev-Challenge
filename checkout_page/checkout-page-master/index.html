@@ -5,132 +5,138 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1,
   maximum-scale=5" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet"> 
   <link rel="icon" href="devchallenges.png" />
   <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
   <link rel="stylesheet" href="style.css">
 
   <title>Checkout</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
 </head>
 
 
 
 <body>
   <div class="allpage">
-  <header>
-    <h1>Checkout</h1>
-  </header>
-  
-  <main class="container">
-    
-    <form action="" class="forms">
-      
-      <h2>Contact information</h2>
+    <header>
+      <h1>Checkout</h1>
+    </header>
 
-      <label for="email"> E-mail:
-        <i class="material-icons md-dark icon">mail</i>
-        <input type="text" id="email" name="email" placeholder="Enter your email..."required>
-      </label>
+    <main class="container">
 
-      <label for="phone"> Phone
-        <i class="material-icons md-dark icon">phone</i>
-        <input type="text" id="phone" class=phone name="phone" placeholder="Enter your phone..." required>
-      </label>
+      <form action="" class="forms">
 
-      <h2>Shipping address</h2>
+        <h2>Contact information</h2>
 
-      <label for="fullName"> Full name
-        <i class="material-icons md-dark icon">
-      
-           account_circle</i>
-        <input type="text" id="fullName" class=fullName name="fullName" placeholder="Rodney Cotton" required>
-      </label>
+        <label for="email"> E-mail:
+          <i class="material-icons md-dark icon">mail</i>
+          <input type="text" name="email" placeholder="Enter your email..." required>
+        </label>
 
-      <label for="fullName"> Address
-        <i class="material-icons md-dark icon">house</i>
-        <input type="text" id="address" class=fullName name="fullName" placeholder="Your address.."required >
-      </label>
+        <label for="phone"> Phone
+          <i class="material-icons md-dark icon">phone</i>
+          <input type="text"   name="phone" placeholder="Enter your phone..." required>
+        </label>
 
-      <label for="fullName"> City
-        <i class="material-icons md-dark icon">location_city</i>
-        <input type="text" id="city" class=city name="fullName" placeholder="Rodney Cotton" required>
-      </label>
-<div class="twoinrow">
-      <label for="county" id="country"> Country
-        <i class="material-icons md-dark icon">public</i>
-        <select type="text" id="county" class=county name="county" placeholder="Your country.." required>
-          <option value="Poland">Poland</option>
+        <h2>Shipping address</h2>
+
+        <label for="fullName"> Full name
+          <i class="material-icons md-dark icon">
+
+            account_circle</i>
+          <input type="text" id="fullName" class=fullName name="fullName" placeholder="Rodney Cotton" required>
+        </label>
+
+        <label for="fullName"> Address
+          <i class="material-icons md-dark icon">house</i>
+          <input type="text" name="fullName" placeholder="Your address.." required>
+        </label>
+
+        <label for="fullName"> City
+          <i class="material-icons md-dark icon">location_city</i>
+          <input type="text"  class=city name="fullName" placeholder="Your city..." required>
+        </label>
+        <div class="twoinrow">
+          <label for="county" id="country"> Country
+            <i class="material-icons md-dark icon">public</i>
+            <select type="text" id="county" class=county name="county" placeholder="Your country.." required>
+              <!-- <option value="Poland">Poland</option>
           <option value="England">England</option>
           <option value="USA">USA</option>
-          <option value="China">China</option>
+          <option value="China">China</option> -->
 
 
 
-        </select>
-      </label>
+            </select>
+          </label>
 
-      <label for="postalcode" id="postalcode"> Postal code
-        <i class="material-icons md-dark icon">mailbox</i>
-       <input type="text" id="postalcode" class=postalcode name="postalcode" placeholder="Your postal code.." required>
-      </label>
-    </div>
-    <div class="twoinrow">
-      <input type="checkbox">
-      <label for="" id=checkboxtest>Save this information for next time</label>
-      
-     
-    </div>
-    <button>Continue</button>
-    </form>
+          <label for="postalcode" id="postalcode"> Postal code
+            <i class="material-icons md-dark icon">mailbox</i>
+            <input type="text" class=postalcode name="postalcode" placeholder="Your postal code.." required>
+          </label>
+        </div>
+        <div class="twoinrow">
+          <input type="checkbox">
+          <label for="" id=checkboxtest>Save this information for next time</label>
 
-    <div class="checkout">
-   
-        <div class="grid-container"> 
+
+        </div>
+        <div class="submit"> <button>Continue</button></div>
+
+      </form>
+
+      <div class="checkout">
+
+        <div class="grid-container">
           <div class="photo">
             <img src="photo1.png" alt="">
           </div>
           <div class="title">Vintage Backbag </div>
           <div class="price">
             $54.99 <div id="old"> $94.99</div>
-           </div>
-          <div class="quantity"> 
-            <i class="material-icons md-dark icon">mail</i>
-            <span>1</span>  
-            <i class="material-icons md-dark icon">mail</i>
+          </div>
+          <div class="quantity">
+            <i class="material-icons icon2  ">add_box</i>
+            <span>1</span>
+            <i class="material-icons  icon2">indeterminate_check_box</i>
           </div>
         </div>
-        
+
         <div class="grid-container">
           <div class="photo">
             <img src="photo2.png" alt="">
           </div>
           <div class="title"> Levi Shoes </div>
           <div class="price">$99.93
-            <div id="old">$124.99</div> </div>
-          <div class="quantity"> 
-            
-            - 1 + </div>
+            <div id="old">$124.99</div>
+          </div>
+          <div class="quantity">
+            <i class="material-icons icon2  ">add_box</i>
+            <span>1</span>
+            <i class="material-icons  icon2">indeterminate_check_box</i>
+          </div>
         </div>
 
         <hr>
-        <div class="twoinrow2"> <div class="text"> Shipping </div>
-       <div class="cost">$ 19</div> 
+        <div class="twoinrow2">
+          <div class="text"> Shipping </div>
+          <div class="cost">$ 19</div>
         </div>
         <hr>
         <div class="twoinrow2">
           <div class="text"> Total </div>
-       <div class="cost">$149.98</div> 
+          <div class="cost">$149.98</div>
         </div>
-       
-
-    </div>
 
 
+      </div>
 
-  </main>
-  <footer>bartlomiejra@DevCHallenges.io</footer>
-</div>
+
+
+    </main>
+    <footer>bartlomiejra@DevCHallenges.io</footer>
+  </div>
 </body>
+
 </html>

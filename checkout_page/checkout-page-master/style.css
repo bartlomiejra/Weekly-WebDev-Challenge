@@ -80,14 +80,13 @@ label {
 
 input {
   color: #828282;
-  text-align: center;
   border: 1px solid #828282;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 12px;
   margin: 5px;
-  border-radius: 10px;
-  padding: 10px;
+  padding: 10px 50px 10px 10px;
+  padding-left: 50px;
+  border-radius: 12px;
   outline: none;
   direction: rtl;
   unicode-bidi: plaintext;
@@ -100,6 +99,11 @@ input {
   color: #828282;
   min-width: 50px;
   text-align: center;
+}
+
+.icon2 {
+  margin: 0px 15px 0px 15px;
+  color: #828282;
 }
 
 select {
@@ -154,6 +158,7 @@ header {
 }
 
 footer {
+  color: #A9A9A9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,6 +181,15 @@ button {
   width: 166px;
 }
 
+.submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 #checkboxtest {
   text-align: center;
   font-size: 0.75em;
@@ -188,7 +202,7 @@ button {
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
       grid-template-areas: "photo  title" "photo    Price" "photo    Price" "photo    quantity" "photo    quantity";
-  margin: 20px 20px 20px 20px;
+  margin: 20px 50px 20px 20px;
 }
 
 hr {
