@@ -35,7 +35,8 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screen](https://user-images.githubusercontent.com/25589535/99142832-10290280-2659-11eb-8816-40d7ef2081fb.PNG)
+
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
@@ -48,5 +49,5 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 ## Contact
 
-- GitHub [@your-username](https://{github.com/bartlomiejra})
-- Twitter [@your-twitter](https://{twitter.com/rachanski_b})
+- GitHub [@your-username](https://github.com/bartlomiejra)
+- Twitter [@your-twitter](https://twitter.com/rachanski_b)
