@@ -106,6 +106,10 @@ input {
   color: #828282;
 }
 
+.icon2:hover {
+  color: #F2994A;
+}
+
 select {
   text-align: center;
   border: 1px solid #828282;
@@ -171,6 +175,7 @@ footer {
 }
 
 button {
+  cursor: pointer;
   background: #F2994A;
   border-radius: 12px;
   color: white;
@@ -179,6 +184,16 @@ button {
   text-decoration: none;
   margin-top: 15px;
   width: 166px;
+  border: none;
+  -webkit-transition: ease-in-out,  0.3s;
+  transition: ease-in-out,  0.3s;
+}
+
+button:hover {
+  -webkit-text-decoration: bold;
+          text-decoration: bold;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .submit {
@@ -188,6 +203,8 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-transition: width 2s;
+  transition: width 2s;
 }
 
 #checkboxtest {
@@ -249,6 +266,7 @@ hr {
 }
 
 .quantity {
+  cursor: pointer;
   -ms-grid-row: 4;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
