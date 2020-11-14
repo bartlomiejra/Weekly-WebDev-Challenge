@@ -26,7 +26,7 @@
 
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
+- [Table of Contents](#table-of-contents)git 
 - [Overview](#overview)
 - [Contact](#contact)
 
@@ -38,16 +38,10 @@
 ![screen](https://user-images.githubusercontent.com/25589535/99142832-10290280-2659-11eb-8816-40d7ef2081fb.PNG)
 
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
 
 
 
 ## Contact
 
-- GitHub [@your-username](https://github.com/bartlomiejra)
-- Twitter [@your-twitter](https://twitter.com/rachanski_b)
+- GitHub [@bartlomiejra](https://github.com/bartlomiejra)
+- Twitter [@rachanski_b](https://twitter.com/rachanski_b)
