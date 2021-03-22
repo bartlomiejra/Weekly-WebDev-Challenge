@@ -4,7 +4,7 @@ body {
   font-size: 18px;
   color: white;
   margin: 1em;
-  background-color: black;
+  background-color: rgb(48, 46, 46);
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
@@ -320,10 +320,13 @@ footer {
   }
 
   .navigation {
+    // min-height: 100vh;
+    // height:100vh;
     display: flex;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: rgb(48, 46, 46);
+    // background-color: black;
     position: absolute;
     top: 0;
     left: 0;
